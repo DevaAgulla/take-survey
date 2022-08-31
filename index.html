@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+
+<body>
+{% for message in get_flashed_messages()%}
+<p> {{message}} </p>
+{% endfor %}
+<form action="feed" method="get">
+<input type="text" name="name" >
+<input types="submit" value="submit">
+</form>
+</body>
+</html>
