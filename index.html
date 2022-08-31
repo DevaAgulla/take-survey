@@ -6,7 +6,7 @@
 {% for message in get_flashed_messages()%}
 <p> {{message}} </p>
 {% endfor %}
-<form action="feed" method="get">
+<form action="feed" method="POST">
 <input type="text" name="name" >
 <input types="submit" value="submit">
 </form>
