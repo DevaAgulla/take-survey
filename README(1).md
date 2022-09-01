@@ -1,4 +1,3 @@
-
 # Feedback-Automation
 
 This is simple python script for automating 
@@ -12,7 +11,7 @@ Follow some steps and get this done in a minute and SAVE YOUR TIME.
 
 1.Open your firefox browser. 2. Login in your HUB using your login_credentials.
  3. Right click and inspect any element and then click on network tab.
-  4.Refresh the page again then you can see a index file under the file tab in the network tab.
+  4.Refresh the page again then you can see an index file under the file tab in the network tab.
   5.Click on it you will find Cookies and copy the cookie called session_id_hub copy the value
   then open new tab in the browser and paste it in the input field of url: (https://take-survey-feed.herokuapp.com/welcome)
   and click on submit
