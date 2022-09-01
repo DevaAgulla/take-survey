@@ -11,14 +11,7 @@ def index():
 @app.route("/greet",methods=["POST","GET"])
 def greet():
     session_id = request.form.get("name")
-    k = 0
-    while (k<=3):
-        if(k==3):
-            break
-        try:
-            survey_data({"session_id_hub":request.form.get("name")})
-        except:
-            continue
+    survey_data({"session_id_hub":request.form.get("name")})
     flash("Thank You...:)")
     return render_template("index.html")
 
