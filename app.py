@@ -11,7 +11,6 @@ def index():
 @app.route("/greet",methods=["POST","GET"])
 def greet():
     session_id = request.form.get("name")
-    flash("Thank You...:)")
     k = 0
     while (k<=3):
         if(k==3):
@@ -20,6 +19,7 @@ def greet():
             survey_data({"session_id_hub":request.form.get("name")})
         except:
             continue
+    flash("Thank You...:)")
     return render_template("index.html")
 
 
